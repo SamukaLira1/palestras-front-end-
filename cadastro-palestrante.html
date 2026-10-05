@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<title>Cadastro palestrante</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+<header>
+<h1>Gerenciador de eventos</h1>
+
+
+<nav>
+
+<a href="cadastro-palestrante.html">Cadastro de palestrantes</a>
+<a href="cadastro-evento.html">Cadastro de evento</a>
+<a href="index.html">Gerenciador de evento</a>
+
+</nav>
+
+</header>
+<main>
+
+<h2>Cadastro palestrante</h2>
+
+<form id="formPalestrante">
+<label>Nome do palestrante</label>
+
+<p class="descricao-campo">Informe o nome completo da pessoa que irá realizar a palestra.</p>
+<input 
+type="text"
+id="nome"
+placeholder="Digite o nome do palestrante"
+required>
+
+
+<label>E-mail do palestrante</label>
+
+<p class="descricao-campo">Digite um e-mail válido para contato e identificação do palestrante.</p>
+<input
+type="email"
+id="email"
+placeholder="Digite o e-mail do palestrante"
+required>
+
+
+
+<button type="submit">Cadastrar</button>
+
+</form>
+</main>
+
+
+<script src="api.js"></script>
+<script src="palestrante.js"></script>
+
+
+</body>
+</html>

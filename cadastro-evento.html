@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Cadastro evento</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<header>
+<h1>Gerenciador de eventos</h1>
+
+
+<nav>
+
+<a href="cadastro-palestrante.html">Cadastro de palestrantes</a>
+<a href="cadastro-evento.html">Cadastro de evento</a>
+<a href="index.html">Gerenciador de evento</a>
+
+</nav>
+</header>
+
+<main>
+
+
+<h2>Cadastro de evento</h2>
+<form id="formEvento">
+
+<label>Nome do evento</label>
+<p class="descricao-campo">Informe o nome ou título pelo qual o evento será identificado.</p>
+
+
+<input 
+type="text" 
+id="nomeEvento"
+placeholder="Digite o nome do evento"
+required>
+
+
+<label>Descrição do evento</label>
+<p class="descricao-campo">Descreva o tema, objetivo ou informações importantes sobre o evento.</p>
+
+
+<textarea 
+id="descricao"
+placeholder="Digite a descrição do evento"
+required>
+</textarea>
+
+
+<label>Local do evento</label>
+<p class="descricao-campo">Informe onde o evento será realizado.</p>
+
+<input 
+type="text" 
+id="local"
+placeholder="Digite o local do evento"
+required>
+
+<label>Data do evento</label>
+<p class="descricao-campo">Escolha a data e horário em que o evento acontecerá.</p>
+
+<input 
+type="datetime-local" 
+id="data"
+required>
+
+<label>Palestrantes</label>
+<p class="descricao-campo">Selecione os palestrantes responsáveis pelas apresentações deste evento.</p>
+
+
+<select 
+id="palestrantes" 
+multiple 
+required>
+</select>
+
+<button type="submit">Cadastrar</button>
+
+</form>
+</main>
+
+<script src="api.js"></script>
+<script src="cadastro-evento.js"></script>
+
+
+</body>
+</html>
